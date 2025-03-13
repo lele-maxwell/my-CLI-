@@ -1,20 +1,19 @@
-
 use decimal::is_decimal;
-use multiply::Operation;
 use division::Ooperation;
-mod multiply;
-mod division;
-mod div;
+use multiply::Operation;
 mod decimal;
+mod div;
+mod division;
+mod multiply;
 fn main() {
-  //  println!("Result: {}", is_decimal(1.0));
-        
-    println!("Result multiplication:{}", Operation::multiplication(2.956, 1.685));
+    //  println!("Result: {}", is_decimal(1.0));
+
+    println!(
+        "Result multiplication:{}",
+        Operation::multiplication(2.956, 1.685)
+    );
     println!("Result division :{}", Ooperation::division(40.5, 2.0));
-
-
 }
-
 
 //
 //fn main() {
@@ -63,7 +62,7 @@ fn main() {
 //
 //    if a == 0.0 || b == 0.0 {
 //        result = 0.0;
-//        
+//
 //    } else if a > b {
 //        result = 1.0 + division(a - b, b);
 //        return result;
@@ -79,14 +78,8 @@ fn main() {
 //    result
 //}
 
-
-
-
-
-
-
 /*
-- crate.io 
+- crate.io
 -docs
 
 
